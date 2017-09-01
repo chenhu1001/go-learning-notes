@@ -25,11 +25,11 @@ func main()  {
 ```
 
 ## 2、Go语言中的字符类型  
-Go语言中支持两种字符类型，一个是byte（实际上是uint8的别名）；另一个是rune，代表单个unicode字符。  
+Go语言中支持两种字符类型，一个是byte（实际上是uint8的别名）；另一个是rune，代表单个unicode字符。  
 byte：int8别称  
 rune：int32别称  
 
-## Go字符串中字符的修改
+## 3、Go字符串中字符的修改
 
 ```
 var s string  = "hello"
