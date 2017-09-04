@@ -79,7 +79,7 @@ a = ar[2:5]
 b = ar[3:5]
 ```
 
-## 8、go语言中type的几种使用
+## 10、go语言中type的几种使用
 * 定义结构体
 
 ```
@@ -95,3 +95,30 @@ type Person struct {
 type name string
 var myname name = "tao2s"   // 其实就是字符串类型
 ```
+
+* 结构体内嵌匿名成员
+
+```
+type Person struct {
+	string
+	age int
+}
+```
+
+* 定义接口类型
+
+```
+type Personer interface {
+	Run()
+	Name() string
+}
+```
+
+* 定义函数类型
+
+```
+type hander func(name string) int
+```
+
+## 11、uintptr类型
+uintptr是整型，可以足够保存指针的范围，在32位平台下为4个字节，在64位平台下为8个字节。
