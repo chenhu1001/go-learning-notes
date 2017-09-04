@@ -79,6 +79,27 @@ a = ar[2:5]
 b = ar[3:5]
 ```
 
+## 8、map声明
+
+```
+var num map[string] int
+num = make(map[string] int, 100)
+
+num := make(map[string] int, 100)
+```
+
+## 9、package别名
+
+```
+import (
+	io "fmt"   // 使用别名调用包 io.Println("Hello World!")
+)
+
+import (
+	. "fmt"   // Println("Hello World!")
+)
+```
+
 ## 10、go语言中type的几种使用
 * 定义结构体
 
