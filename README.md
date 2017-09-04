@@ -78,3 +78,20 @@ var a, b []byte
 a = ar[2:5]
 b = ar[3:5]
 ```
+
+## 8、go语言中type的几种使用
+* 定义结构体
+
+```
+type Person struct {
+	name string
+	age int
+} 
+```
+
+* 类型等价定义
+
+```
+type name string
+var myname name = "tao2s"   // 其实就是字符串类型
+```
