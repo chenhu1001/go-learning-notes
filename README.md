@@ -204,3 +204,9 @@ for循环中条件语句每次循环都会被重新检查，因此不建议在�
 * 如果函数体内某个变量作为defer时匿名函数的参数，则在定义defer时即已获得了拷贝，否则则是引用某个变量的地址；
 * go没有异常机制，但有panic/recover模式来处理错误；
 * panic可以在任何地方引发，但recover只有在defer调用的函数中有效。
+
+## 25、bee创建项目
+
+```
+bee api apiproject -driver=mysql -conn="root:root@tcp(127.0.0.1:3306)/chenhu"
+```
